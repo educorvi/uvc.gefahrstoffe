@@ -6,6 +6,12 @@
   <configure zcml:condition="installed AccessControl.security">
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="uvc.gefahrstoffe.AddGefahrstoff"
+        title="uvc.gefahrstoffe: Add Gefahrstoff"
+    />
+
+
 
   </configure>
 
