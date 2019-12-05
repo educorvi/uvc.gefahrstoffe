@@ -17,11 +17,6 @@ class IGefahrstoff(model.Schema):
     """ Marker interface and Dexterity Python Schema for Gefahrstoff
     """
 
-@implementer(IGefahrstoff)
-class Gefahrstoff(Container):
-    """
-    """
-
     title = schema.TextLine(title=_(u"Name des Gefahrstoffes"))
 
     description = schema.Text(title=_(u"Nähere Angaben zum Gefahrstoff"), required=False)
@@ -35,3 +30,8 @@ class Gefahrstoff(Container):
     branche = schema.List(title=_(u"Branchen, in denen der Gefahrstoff eingesetzt wird"),
                           value_type=schema.Choice(vocabulary=bgetembranchen),
                           required = False)
+
+@implementer(IGefahrstoff)
+class Gefahrstoff(Container):
+    """
+    """

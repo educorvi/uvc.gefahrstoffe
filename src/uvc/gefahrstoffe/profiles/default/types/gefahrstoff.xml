@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="gefahrstoff"
+    name="Gefahrstoff"
     meta_type="Dexterity FTI"
     i18n:domain="uvc.gefahrstoffe">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">gefahrstoff</property>
+      name="title">Gefahrstoff</property>
   <property
       i18n:translate=""
       name="description">Reinstoff</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">gefahrstoff</property>
+  <property name="factory">Gefahrstoff</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
@@ -45,7 +45,6 @@
     <element value="plone.ownership"/>
     <element value="plone.publication"/>
     <element value="plone.categorization"/>
-    <element value="plone.basic"/>
     <element value="plone.locking" />
     <!--<element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />-->
     <!--<element value="plone.leadimage"/>-->
@@ -61,7 +60,7 @@
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++gefahrstoff</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Gefahrstoff</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
